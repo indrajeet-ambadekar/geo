@@ -1,0 +1,13 @@
+<%if current_user%>
+<%=current_user.email%>||<a href="/users/sign_out" data-method="delete">Logout</a>
+<form action='/create' method="POST">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %> 
+	title:<input type="text" id="title" name="title"><br/>
+	description:<input type="text" id="desc" name="desc"><br/>
+	<input type="submit" value="submit" id="submit">
+</form>
+<%=@status%>
+<%else%>
+<a href="/users/sign_in">Login</a>
+<a href="/users/sign_up">Register</a>
+<%end%>
