@@ -2,7 +2,9 @@ Loctest::Application.routes.draw do
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   devise_for :users
   get "article/index"
-  match '/create', to: 'article#create', via: [:get, :post]
+  match 'article/create', to: 'article#create', via: [:get, :post]
+  get "location/index"
+  match '/create', to: 'location#create', via: [:get, :post]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

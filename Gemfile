@@ -29,6 +29,7 @@ gem 'rails_admin'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem "nifty-generators"
+gem 'geocoder'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 

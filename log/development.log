@@ -3496,3 +3496,3210 @@ Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 
 
 
 Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:35:42 +0530
+
+
+Started GET "/" for 192.168.0.109 at 2014-02-13 03:40:31 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ArticleController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered article/index.html.erb within layouts/application (42.9ms)
+Completed 200 OK in 149ms (Views: 104.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:40:31 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:40:31 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:40:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:31 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:31 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:31 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 03:40:36 +0530
+Processing by ArticleController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "title"=>"t67jti", "desc"=>"tjjji78ij"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (24.2ms)[0m  [1mINSERT INTO `articles` (`created_at`, `desc`, `title`, `updated_at`) VALUES ('2014-02-12 22:10:36', 'tjjji78ij', 't67jti', '2014-02-12 22:10:36')[0m
+  [1m[35m (242.8ms)[0m  COMMIT
+  Rendered article/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 330ms (Views: 6.7ms | ActiveRecord: 268.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:40:37 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:40:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:37 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:40:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:37 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:37 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:40:37 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 03:42:01 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ArticleController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "title"=>"t67jti", "desc"=>"tjjji78ij"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (24.4ms)[0m  INSERT INTO `articles` (`created_at`, `desc`, `title`, `updated_at`) VALUES ('2014-02-12 22:12:01', 'tjjji78ij', 't67jti', '2014-02-12 22:12:01')
+  [1m[36m (120.1ms)[0m  [1mCOMMIT[0m
+  Rendered article/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 309ms (Views: 73.1ms | ActiveRecord: 148.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:42:02 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:42:02 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:42:02 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:42:02 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:42:02 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:42:02 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:42:02 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:42:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:42:02 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateLocations (20140212221329)
+  [1m[35m (333.8ms)[0m  CREATE TABLE `locations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `address` varchar(255), `latitude` float, `longitude` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140212221329')
+  [1m[36m (136.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/locations/new" for 192.168.0.109 at 2014-02-13 03:44:05 +0530
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Processing by LocationsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (`attr_accessible` is extracted out of Rails into a gem. Please use new recommended protection model for params(strong_parameters) or add `protected_attributes` to your Gemfile to use old one.):
+  app/models/location.rb:2:in `<class:Location>'
+  app/models/location.rb:1:in `<top (required)>'
+  app/controllers/locations_controller.rb:11:in `new'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started GET "/locations/new" for 192.168.0.109 at 2014-02-13 03:44:42 +0530
+Processing by LocationsController#new as HTML
+  Rendered locations/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `title' for #<#<Class:0x000000050477e8>:0x0000000504ede0>):
+    1: <% title "New Location" %>
+    2: 
+    3: <%= render 'form' %>
+    4: 
+  app/views/locations/new.html.erb:1:in `_app_views_locations_new_html_erb__3738870941040121885_42101760'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateLocations (20140212221329)
+  [1m[36m (131.8ms)[0m  [1mDROP TABLE `locations`[0m
+  [1m[35mSQL (149.8ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20140212221329'
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Mysql2::Error: Table 'location.locations' doesn't exist: SHOW FULL FIELDS FROM `locations`
+
+
+Started GET "/" for 192.168.0.109 at 2014-02-13 03:46:57 +0530
+Processing by ArticleController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered article/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:46:57 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:46:58 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:46:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:46:58 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:46:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:46:58 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:46:58 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:46:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:46:58 +0530
+
+
+Started GET "/" for 192.168.0.109 at 2014-02-13 03:50:27 +0530
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1145592133211601737__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateLocations (20140212221820)
+  [1m[35m (431.5ms)[0m  CREATE TABLE `locations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `address` varchar(255), `longitude` float, `latitude` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140212221820')
+  [1m[36m (141.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 192.168.0.109 at 2014-02-13 03:50:41 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ArticleController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered article/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 209ms (Views: 206.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:50:42 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:50:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:42 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 03:50:42 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:50:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:42 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:42 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:42 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:42 +0530
+
+
+Started POST "/article/create" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+Processing by ArticleController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "title"=>"3dr34r", "desc"=>"q3d4r4rt"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `articles` (`created_at`, `desc`, `title`, `updated_at`) VALUES ('2014-02-12 22:20:46', 'q3d4r4rt', '3dr34r', '2014-02-12 22:20:46')[0m
+  [1m[35m (272.5ms)[0m  COMMIT
+  Rendered article/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 293ms (Views: 5.9ms | ActiveRecord: 274.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:50:46 +0530
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+Processing by LocationController#index as HTML
+  Rendered location/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:51:34 +0530
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered location/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:06 +0530
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered location/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:53:42 +0530
+
+
+Started POST "/location/location/create" for 192.168.0.109 at 2014-02-13 03:53:48 +0530
+
+ActionController::RoutingError (No route matches [POST] "/location/location/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (32.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (65.7ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 03:54:09 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered location/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:54:09 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:54:09 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:54:09 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 03:54:10 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:54:10 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:54:10 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:54:10 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:54:10 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:54:10 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 03:54:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:54:10 +0530
+
+
+Started POST "/location/location/create" for 192.168.0.109 at 2014-02-13 03:54:11 +0530
+
+ActionController::RoutingError (No route matches [POST] "/location/location/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.1ms)
+
+
+Started GET "/" for 192.168.0.109 at 2014-02-13 03:55:45 +0530
+Processing by ArticleController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered article/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:55:45 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:55:46 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:55:46 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 03:55:46 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:46 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:46 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:46 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:46 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:46 +0530
+
+
+Started GET "/location/" for 192.168.0.109 at 2014-02-13 03:55:52 +0530
+
+ActionController::RoutingError (No route matches [GET] "/location"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (27.8ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 03:55:55 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered location/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:55:55 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:55:56 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 03:55:56 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:56 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:55:56 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:56 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:56 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:56 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:56 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:56 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:55:56 +0530
+
+
+Started POST "/location/location/create" for 192.168.0.109 at 2014-02-13 03:55:59 +0530
+
+ActionController::RoutingError (No route matches [POST] "/location/location/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.6ms)
+
+
+Started POST "/article/create" for 192.168.0.109 at 2014-02-13 03:56:23 +0530
+Processing by ArticleController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "title"=>"egy6", "desc"=>"e56yge"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `articles` (`created_at`, `desc`, `title`, `updated_at`) VALUES ('2014-02-12 22:26:23', 'e56yge', 'egy6', '2014-02-12 22:26:23')
+  [1m[36m (247.8ms)[0m  [1mCOMMIT[0m
+  Rendered article/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 275ms (Views: 11.0ms | ActiveRecord: 249.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:56:24 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:56:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:56:24 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 03:56:24 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:56:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:56:24 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:56:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:56:24 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:56:24 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 03:56:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:56:24 +0530
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered location/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 03:58:01 +0530
+
+
+Started POST "/location/location/create" for 192.168.0.109 at 2014-02-13 03:58:10 +0530
+
+ActionController::RoutingError (No route matches [POST] "/location/location/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (30.0ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (58.1ms)
+
+
+Started POST "/location/location/create" for 192.168.0.109 at 2014-02-13 03:58:35 +0530
+
+ActionController::RoutingError (No route matches [POST] "/location/location/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.6ms)
+
+
+Started POST "/location/location/create" for 192.168.0.109 at 2014-02-13 03:58:52 +0530
+
+ActionController::RoutingError (No route matches [POST] "/location/location/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (28.1ms)
+
+
+Started GET "/location/create" for 192.168.0.109 at 2014-02-13 03:59:10 +0530
+
+ActionController::RoutingError (No route matches [GET] "/location/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (28.3ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered location/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:00:07 +0530
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered location/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:01:24 +0530
+
+
+Started POST "/location/location/create" for 192.168.0.109 at 2014-02-13 04:01:26 +0530
+
+ActionController::RoutingError (No route matches [POST] "/location/location/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (28.0ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:02:29 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered location/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 153ms (Views: 109.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:02:29 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:02:29 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:02:29 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:02:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:30 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:30 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:30 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:30 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:30 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:30 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:30 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:02:32 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"r67u", "latitude"=>"", "longitude"=>""}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO `locations` (`address`, `created_at`, `updated_at`) VALUES ('r67u', '2014-02-12 22:32:32', '2014-02-12 22:32:32')
+  [1m[36m (211.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered location/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 255ms (Views: 10.5ms | ActiveRecord: 215.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:02:33 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:02:33 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:02:33 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:02:33 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:33 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:33 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:33 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:33 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:33 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:33 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:02:33 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddColumnToLocation (20140212223340)
+  [1m[35m (873.4ms)[0m  ALTER TABLE `locations` ADD `user_id` int(11)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (13.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140212223340')
+  [1m[36m (155.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:12:43 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActionController::RoutingError (No route matches [POST] "/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (36.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (71.3ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:12:52 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT `locations`.* FROM `locations`[0m
+  Rendered location/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 138ms (Views: 91.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:12:52 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:12:52 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:12:52 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:12:52 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:12:52 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:12:52 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:12:52 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:12:52 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:12:53 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:12:53 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:12:53 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:13:01 +0530
+
+ActionController::RoutingError (No route matches [POST] "/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (41.4ms)
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:13:14 +0530
+
+ActionController::RoutingError (No route matches [POST] "/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.0ms)
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"456y4t6y", "latitude"=>"726", "longitude"=>"67186"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (60.5ms)[0m  INSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('456y4t6y', '2014-02-12 22:43:39', 726.0, 67186.0, '2014-02-12 22:43:39')
+  [1m[36m (135.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 242ms (Views: 10.3ms | ActiveRecord: 198.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:39 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:13:45 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"q34d", "latitude"=>"1415", "longitude"=>"782"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('q34d', '2014-02-12 22:43:45', 1415.0, 782.0, '2014-02-12 22:43:45')[0m
+  [1m[35m (286.0ms)[0m  COMMIT
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations`[0m
+  Rendered location/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 299ms (Views: 7.6ms | ActiveRecord: 286.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:13:46 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:13:46 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:13:46 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:13:46 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:46 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:46 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:46 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:46 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:13:46 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:14:01 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"q34d", "latitude"=>"1415", "longitude"=>"782"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('q34d', '2014-02-12 22:44:01', 1415.0, 782.0, '2014-02-12 22:44:01')
+  [1m[36m (282.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (0.4ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 622ms (Views: 13.9ms | ActiveRecord: 286.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:14:02 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:14:02 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:14:02 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:14:02 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:02 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:02 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:02 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:02 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:02 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:02 +0530
+
+
+Started GET "/index" for 192.168.0.109 at 2014-02-13 04:14:08 +0530
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (31.4ms)
+
+
+Started GET "/index" for 192.168.0.109 at 2014-02-13 04:14:33 +0530
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (28.4ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (55.5ms)
+
+
+Started GET "/index" for 192.168.0.109 at 2014-02-13 04:14:34 +0530
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (27.4ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:14:47 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (38.5ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:14:47 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:14:48 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:14:48 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:14:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:48 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:48 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:48 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:48 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:48 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:14:48 +0530
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:00 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:15:16 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"Statue of liberty, NY", "latitude"=>"", "longitude"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('Statue of liberty, NY', '2014-02-12 22:45:16', 40.6892494, -74.04450039999999, '2014-02-12 22:45:16')[0m
+  [1m[35m (149.9ms)[0m  COMMIT
+  [1m[36mLocation Load (0.5ms)[0m  [1mSELECT `locations`.* FROM `locations`[0m
+  Rendered location/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 505ms (Views: 12.0ms | ActiveRecord: 150.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:17 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:17 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:17 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:17 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:17 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:17 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:17 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:17 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:17 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:17 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:17 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:15:32 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"tower of London, london", "latitude"=>"", "longitude"=>""}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('tower of London, london', '2014-02-12 22:45:32', 51.5080937, -0.0761144, '2014-02-12 22:45:32')
+  [1m[36m (248.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (0.5ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 556ms (Views: 11.1ms | ActiveRecord: 249.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:33 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:33 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:33 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:33 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:33 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:33 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:33 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:33 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:33 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:33 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:33 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:15:58 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"red fort, delhi", "latitude"=>"", "longitude"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('red fort, delhi', '2014-02-12 22:45:59', 28.6565292, 77.2411241, '2014-02-12 22:45:59')[0m
+  [1m[35m (216.4ms)[0m  COMMIT
+  [1m[36mLocation Load (0.5ms)[0m  [1mSELECT `locations`.* FROM `locations`[0m
+  Rendered location/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 501ms (Views: 12.4ms | ActiveRecord: 217.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:59 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:59 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:59 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:15:59 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:59 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:59 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:59 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:59 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:15:59 +0530
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:17:45 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations`[0m
+  Rendered location/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:17:46 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:17:46 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:17:46 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:17:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:17:46 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:17:46 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:17:46 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:17:46 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:17:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:17:46 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:17:46 +0530
+
+
+Started POST "/location/location/create" for 192.168.0.109 at 2014-02-13 04:17:55 +0530
+
+ActionController::RoutingError (No route matches [POST] "/location/location/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.2ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:18:07 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT `locations`.* FROM `locations`[0m
+  Rendered location/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:18:08 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:18:08 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:18:08 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:08 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:18:08 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:08 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:08 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:08 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:08 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:08 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:08 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:18:10 +0530
+
+ActionController::RoutingError (No route matches [POST] "/create"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (28.6ms)
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:18:24 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"forbidden city, beijing", "latitude"=>"", "longitude"=>""}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('forbidden city, beijing', '2014-02-12 22:48:25', 39.9163208, 116.3970703, '2014-02-12 22:48:25')
+  [1m[36m (134.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 503ms (Views: 10.5ms | ActiveRecord: 138.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:18:25 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:18:25 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:18:25 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:18:25 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:25 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:25 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:25 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:25 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:25 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:25 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:18:25 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:24:29 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"forbidden city, beijing", "latitude"=>"", "longitude"=>""}
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `address_changed?' for #<Class:0x000000046262f0>):
+  app/models/location.rb:4:in `<class:Location>'
+  app/models/location.rb:1:in `<top (required)>'
+  app/controllers/location_controller.rb:6:in `create'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:24:44 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"forbidden city, beijing", "latitude"=>"", "longitude"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('forbidden city, beijing', '2014-02-12 22:54:45', 39.9163208, 116.3970703, '2014-02-12 22:54:45')[0m
+  [1m[35m (165.0ms)[0m  COMMIT
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT `locations`.* FROM `locations`[0m
+  [1m[35mLocation Load (40.1ms)[0m  SELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((39.9163 - locations.latitude) * PI() / 180 / 2), 2) + COS(39.9163 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((116.397 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - 116.397), RADIANS(locations.latitude - 39.9163))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN 39.77156821688915 AND 40.06103178311085 AND locations.longitude BETWEEN 116.20829718407049 AND 116.58570281592952 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((39.9163 - locations.latitude) * PI() / 180 / 2), 2) + COS(39.9163 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((116.397 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 8) ORDER BY distance ASC
+  Rendered location/index.html.erb within layouts/application (53.1ms)
+Completed 500 Internal Server Error in 614ms
+
+ActionView::Template::Error (undefined method `location_path' for #<#<Class:0x000000045f7b30>:0x000000045f6ac8>):
+    16: <ul>
+    17: 	<% for location in loc.nearbys(10) %>
+    18: 	<li>
+    19: 		<%= link_to location.address, location %> (<%=location.distance(2)%> miles)
+    20: 	</li>
+    21: 	<% end %>
+    22: </ul>
+  app/views/location/index.html.erb:19:in `block (2 levels) in _app_views_location_index_html_erb__1521394843965756956_36697820'
+  app/views/location/index.html.erb:17:in `block in _app_views_location_index_html_erb__1521394843965756956_36697820'
+  app/views/location/index.html.erb:11:in `_app_views_location_index_html_erb__1521394843965756956_36697820'
+  app/controllers/location_controller.rb:16:in `create'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:25:49 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"forbidden city, beijing", "latitude"=>"", "longitude"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('forbidden city, beijing', '2014-02-12 22:55:49', 39.9163208, 116.3970703, '2014-02-12 22:55:49')[0m
+  [1m[35m (194.1ms)[0m  COMMIT
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations`[0m
+  [1m[35mLocation Load (0.5ms)[0m  SELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((39.9163 - locations.latitude) * PI() / 180 / 2), 2) + COS(39.9163 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((116.397 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - 116.397), RADIANS(locations.latitude - 39.9163))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN 39.77156821688915 AND 40.06103178311085 AND locations.longitude BETWEEN 116.20829718407049 AND 116.58570281592952 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((39.9163 - locations.latitude) * PI() / 180 / 2), 2) + COS(39.9163 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((116.397 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 8) ORDER BY distance ASC
+  Rendered location/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 485ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    16: <ul>
+    17: 	<% for place in loc.nearbys(10) %>
+    18: 	<li>
+    19: 		<%= link_to place.address,'' %> (<%=place.distance(2)%> miles)
+    20: 	</li>
+    21: 	<% end %>
+    22: </ul>
+  app/views/location/index.html.erb:19:in `block (2 levels) in _app_views_location_index_html_erb__1521394843965756956_23101220'
+  app/views/location/index.html.erb:17:in `block in _app_views_location_index_html_erb__1521394843965756956_23101220'
+  app/views/location/index.html.erb:11:in `_app_views_location_index_html_erb__1521394843965756956_23101220'
+  app/controllers/location_controller.rb:16:in `create'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:36:20 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"forbidden city, beijing", "latitude"=>"", "longitude"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('forbidden city, beijing', '2014-02-12 23:06:21', 39.9163208, 116.3970703, '2014-02-12 23:06:21')[0m
+  [1m[35m (176.9ms)[0m  COMMIT
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT `locations`.* FROM `locations`[0m
+  [1m[35mLocation Load (0.9ms)[0m  SELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((39.9163 - locations.latitude) * PI() / 180 / 2), 2) + COS(39.9163 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((116.397 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - 116.397), RADIANS(locations.latitude - 39.9163))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN 39.77156821688915 AND 40.06103178311085 AND locations.longitude BETWEEN 116.20829718407049 AND 116.58570281592952 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((39.9163 - locations.latitude) * PI() / 180 / 2), 2) + COS(39.9163 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((116.397 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 8) ORDER BY distance ASC
+  Rendered location/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 590ms
+
+ActionView::Template::Error (wrong number of arguments (2 for 1)):
+    16: <ul>
+    17: 	<% for place in loc.nearbys(10) %>
+    18: 	<li>
+    19: 		<%= link_to place.address,'place' %> (<%=place.distance(2)%> miles)
+    20: 	</li>
+    21: 	<% end %>
+    22: </ul>
+  app/views/location/index.html.erb:19:in `block (2 levels) in _app_views_location_index_html_erb__1521394843965756956_34966160'
+  app/views/location/index.html.erb:17:in `block in _app_views_location_index_html_erb__1521394843965756956_34966160'
+  app/views/location/index.html.erb:11:in `_app_views_location_index_html_erb__1521394843965756956_34966160'
+  app/controllers/location_controller.rb:16:in `create'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:37:04 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"forbidden city, beijing", "latitude"=>"", "longitude"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('forbidden city, beijing', '2014-02-12 23:07:05', 39.9163208, 116.3970703, '2014-02-12 23:07:05')[0m
+  [1m[35m (139.3ms)[0m  COMMIT
+ERROR: compiling _app_views_location_index_html_erb__1521394843965756956_70217619160920 RAISED /home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: unknown regexp option - r
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+<a href="/users/sign_up">Register</a>
+                        ^
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: unterminated string meets end of file
+Function body:           def _app_views_location_index_html_erb__1521394843965756956_70217619160920(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "location/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;if current_user
+@output_buffer.append=(current_user.email);@output_buffer.safe_append='||<a href="/users/sign_out" data-method="delete">Logout</a>
+<form action=\'/create\' method="POST">
+';@output_buffer.append=( hidden_field_tag :authenticity_token, form_authenticity_token );@output_buffer.safe_append=' 
+';@output_buffer.safe_append='	address:<input type="text" id="address" name="address"><br/>
+	Latitude:<input type="text" id="latitude" name="latitude"><br/>
+	Longitude:<input type="text" id="latitude" name="longitude"><br/>
+	<input type="submit" value="submit" id="submit">
+</form>
+'; @loc=Location.all 
+ @loc.each do |loc| 
+@output_buffer.append=( loc.address );@output_buffer.safe_append='<br/>
+';@output_buffer.append=( loc.latitude );@output_buffer.safe_append='<br/>
+';@output_buffer.append=( loc.longitude );@output_buffer.safe_append='<br/><br/>
+<h3>Nearby places</h3>
+<ul>
+';	 for place in loc.nearbys(10) 
+@output_buffer.safe_append='	<li>
+		';@output_buffer.append=( #link_to place.address,'place' );@output_buffer.safe_append=' (';@output_buffer.append=(#place.distance(2));@output_buffer.safe_append=' miles)
+	</li>
+';	 end 
+@output_buffer.safe_append='</ul>
+<br/><br>
+'; end 
+else
+@output_buffer.safe_append='<a href="/users/sign_in">Login</a>
+<a href="/users/sign_up">Register</a>
+';end;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/remotipart-1.2.1/lib/remotipart/render_overrides.rb:14:in `render_with_remotipart'
+/home/samrat/Documents/git/geo/app/controllers/location_controller.rb:16:in `create'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__1553483988764531301__process_action__callbacks'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-pjax-0.7.0/lib/rack/pjax.rb:12:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/omniauth-1.2.1/lib/omniauth/strategy.rb:186:in `call!'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/omniauth-1.2.1/lib/omniauth/strategy.rb:164:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/omniauth-1.2.1/lib/omniauth/builder.rb:59:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/conditionalget.rb:35:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/remotipart-1.2.1/lib/remotipart/middleware.rb:27:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__3652736801578683961__call__callbacks'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered location/index.html.erb within layouts/application (23.2ms)
+Completed 500 Internal Server Error in 559ms
+
+ActionView::Template::Error (/home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: unknown regexp option - r
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+<a href="/users/sign_up">Register</a>
+                        ^
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: unterminated string meets end of file):
+    24: <% end %>
+    25: <%else%>
+    26: <a href="/users/sign_in">Login</a>
+    27: <a href="/users/sign_up">Register</a>
+    28: <%end%>
+  app/controllers/location_controller.rb:16:in `create'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:37:28 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"forbidden city, beijing", "latitude"=>"", "longitude"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('forbidden city, beijing', '2014-02-12 23:07:29', 39.9163208, 116.3970703, '2014-02-12 23:07:29')[0m
+  [1m[35m (120.6ms)[0m  COMMIT
+ERROR: compiling _app_views_location_index_html_erb__1521394843965756956_70217616162260 RAISED /home/samrat/Documents/git/geo/app/views/location/index.html.erb:20: syntax error, unexpected '<'
+	</li>
+	 ^
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:22: unknown regexp option - l
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:22: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+@output_buffer.safe_append='<a href="/users/sign_in">Login</a>
+                                   ^
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: unknown regexp option - r
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+<a href="/users/sign_up">Register</a>
+                        ^
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: unterminated string meets end of file
+Function body:           def _app_views_location_index_html_erb__1521394843965756956_70217616162260(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "location/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;if current_user
+@output_buffer.append=(current_user.email);@output_buffer.safe_append='||<a href="/users/sign_out" data-method="delete">Logout</a>
+<form action=\'/create\' method="POST">
+';@output_buffer.append=( hidden_field_tag :authenticity_token, form_authenticity_token );@output_buffer.safe_append=' 
+';@output_buffer.safe_append='	address:<input type="text" id="address" name="address"><br/>
+	Latitude:<input type="text" id="latitude" name="latitude"><br/>
+	Longitude:<input type="text" id="latitude" name="longitude"><br/>
+	<input type="submit" value="submit" id="submit">
+</form>
+'; @loc=Location.all 
+ @loc.each do |loc| 
+@output_buffer.append=( loc.address );@output_buffer.safe_append='<br/>
+';@output_buffer.append=( loc.latitude );@output_buffer.safe_append='<br/>
+';@output_buffer.append=( loc.longitude );@output_buffer.safe_append='<br/><br/>
+<!-- <h3>Nearby places</h3>
+<ul>
+';	 #for place in loc.nearbys(10) 
+@output_buffer.safe_append='	<li>
+		';@output_buffer.append=( #link_to place.address,'place' );@output_buffer.safe_append=' (';@output_buffer.append=(#place.distance(2));@output_buffer.safe_append=' miles)
+	</li>
+';	 #end 
+@output_buffer.safe_append='</ul> -->
+<br/><br>
+'; end 
+else
+@output_buffer.safe_append='<a href="/users/sign_in">Login</a>
+<a href="/users/sign_up">Register</a>
+';end;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/remotipart-1.2.1/lib/remotipart/render_overrides.rb:14:in `render_with_remotipart'
+/home/samrat/Documents/git/geo/app/controllers/location_controller.rb:16:in `create'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__1553483988764531301__process_action__callbacks'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-pjax-0.7.0/lib/rack/pjax.rb:12:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/omniauth-1.2.1/lib/omniauth/strategy.rb:186:in `call!'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/omniauth-1.2.1/lib/omniauth/strategy.rb:164:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/omniauth-1.2.1/lib/omniauth/builder.rb:59:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/conditionalget.rb:35:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/remotipart-1.2.1/lib/remotipart/middleware.rb:27:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__3652736801578683961__call__callbacks'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered location/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 506ms
+
+ActionView::Template::Error (/home/samrat/Documents/git/geo/app/views/location/index.html.erb:20: syntax error, unexpected '<'
+	</li>
+	 ^
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:22: unknown regexp option - l
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:22: syntax error, unexpected '\n', expecting keyword_do_LAMBDA or tLAMBEG
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+@output_buffer.safe_append='<a href="/users/sign_in">Login</a>
+                                   ^
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: unknown regexp option - r
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+<a href="/users/sign_up">Register</a>
+                        ^
+/home/samrat/Documents/git/geo/app/views/location/index.html.erb:27: unterminated string meets end of file):
+    17: 	<% #for place in loc.nearbys(10) %>
+    18: 	<li>
+    19: 		<%= #link_to place.address,'place' %> (<%=#place.distance(2)%> miles)
+    20: 	</li>
+    21: 	<% #end %>
+    22: </ul> -->
+    23: <br/><br>
+  app/controllers/location_controller.rb:16:in `create'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:37:48 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.4ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:37:48 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:37:49 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:37:49 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:37:49 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:37:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:37:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:37:49 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:37:49 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:37:49 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:37:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:37:49 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:38:22 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"eiffel tower", "latitude"=>"", "longitude"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('eiffel tower', '2014-02-12 23:08:23', 48.85837009999999, 2.2944813, '2014-02-12 23:08:23')[0m
+  [1m[35m (212.1ms)[0m  COMMIT
+Redirected to 
+Completed 500 Internal Server Error in 570ms
+
+NoMethodError (undefined method `index_url' for #<LocationController:0x007fb9a00992a8>):
+  app/controllers/location_controller.rb:16:in `create'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:38:42 +0530
+
+SyntaxError (/home/samrat/Documents/git/geo/app/controllers/location_controller.rb:16: syntax error, unexpected tASSOC
+    redirect_to action:=>index
+                         ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack-pjax (0.7.0) lib/rack/pjax.rb:12:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.1) lib/omniauth/builder.rb:59:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  remotipart (1.2.1) lib/remotipart/middleware.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3652736801578683961__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/samrat/.rvm/rubies/ruby-1.9.3-p484/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.4ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 41ms (Views: 36.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:38:56 +0530
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:39:18 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:39:18 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:39:18 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:39:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:18 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:39:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:19 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:19 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:19 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:19 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:39:26 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4=", "address"=>"eiffel tower", "latitude"=>"", "longitude"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('eiffel tower', '2014-02-12 23:09:26', 48.85837009999999, 2.2944813, '2014-02-12 23:09:26')[0m
+  [1m[35m (193.1ms)[0m  COMMIT
+Redirected to http://192.168.0.109:3000/location/index
+Completed 302 Found in 544ms (ActiveRecord: 194.0ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:39:27 +0530
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:41:23 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `latitude' for #<ActiveRecord::Relation::ActiveRecord_Relation_Location:0x007fb99008b370>):
+    12: <%= loc.address %><br/>
+    13: <%= loc.latitude %><br/>
+    14: <%= loc.longitude %><br/><br/>
+    15: <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@loc.latitude}%2C#{loc.longitude}" %>
+    16: <br/><br>
+    17: <% end %>
+    18: <%else%>
+  app/views/location/index.html.erb:15:in `block in _app_views_location_index_html_erb__1521394843965756956_70217481029080'
+  app/views/location/index.html.erb:11:in `_app_views_location_index_html_erb__1521394843965756956_70217481029080'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (31.3ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (41.7ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:41:54 +0530
+
+
+Started DELETE "/users/sign_out" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8POFMZL/i7KmaeDQWI2VcUd9pv+KS2fttU29sZT9AV4="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.0.109:3000/
+Completed 302 Found in 50ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+Processing by ArticleController#index as HTML
+  Rendered article/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:42:53 +0530
+
+
+Started GET "/users/sign_in" for 192.168.0.109 at 2014-02-13 04:42:55 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (44.5ms)
+Completed 200 OK in 56ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.0.109 at 2014-02-13 04:43:01 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KThgEAq+GOmAv8di8hmjvQaKJmtJmPKoDM+P76BxxBw=", "user"=>{"email"=>"test1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'test1@example.com' ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2014-02-12 22:05:41', `current_sign_in_at` = '2014-02-12 23:13:01', `last_sign_in_ip` = '192.168.0.109', `sign_in_count` = 3, `updated_at` = '2014-02-12 23:13:01' WHERE `users`.`id` = 1
+  [1m[36m (167.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.0.109:3000/
+Completed 302 Found in 274ms (ActiveRecord: 168.4ms)
+
+
+Started GET "/" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+Processing by ArticleController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered article/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:02 +0530
+
+
+Started GET "/" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+Processing by ArticleController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered article/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:07 +0530
+
+
+Started DELETE "/users/sign_out" for 192.168.0.109 at 2014-02-13 04:43:09 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LzDfMZpGsKegXk7ZqkADcX7ri3z80/xAB+5clJ5bNrw="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://192.168.0.109:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 192.168.0.109 at 2014-02-13 04:43:09 +0530
+Processing by ArticleController#index as HTML
+  Rendered article/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:10 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:10 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:10 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:10 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:10 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:10 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:10 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:10 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:10 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:10 +0530
+
+
+Started GET "/users/sign_in" for 192.168.0.109 at 2014-02-13 04:43:11 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.0.109 at 2014-02-13 04:43:16 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/gdxJcYiIaIRtgOEwixLN+MmzVfxrRNZlLwZLYDKsoE=", "user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/gdxJcYiIaIRtgOEwixLN+MmzVfxrRNZlLwZLYDKsoE=", "user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 95ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:17 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:17 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:17 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:17 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:17 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:17 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:17 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:17 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:17 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:17 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:17 +0530
+
+
+Started POST "/users/sign_in" for 192.168.0.109 at 2014-02-13 04:43:24 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/gdxJcYiIaIRtgOEwixLN+MmzVfxrRNZlLwZLYDKsoE=", "user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@example.com' ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/gdxJcYiIaIRtgOEwixLN+MmzVfxrRNZlLwZLYDKsoE=", "user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 93ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:24 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:24 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:24 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:25 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:25 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:25 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:25 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:25 +0530
+
+
+Started POST "/users/sign_in" for 192.168.0.109 at 2014-02-13 04:43:34 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/gdxJcYiIaIRtgOEwixLN+MmzVfxrRNZlLwZLYDKsoE=", "user"=>{"email"=>"test1@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test1@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `remember_created_at` = '2014-02-12 23:13:34', `updated_at` = '2014-02-12 23:13:34' WHERE `users`.`id` = 1[0m
+  [1m[35m (188.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2014-02-12 23:13:01', `current_sign_in_at` = '2014-02-12 23:13:34', `sign_in_count` = 4, `updated_at` = '2014-02-12 23:13:34' WHERE `users`.`id` = 1
+  [1m[36m (260.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.0.109:3000/
+Completed 302 Found in 564ms (ActiveRecord: 450.9ms)
+
+
+Started GET "/" for 192.168.0.109 at 2014-02-13 04:43:34 +0530
+Processing by ArticleController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered article/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:34 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:35 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:35 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:35 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:43:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:35 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:35 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:35 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:43:35 +0530
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.3ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:05 +0530
+
+
+Started POST "/create" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"HwEJe1ku6jVmsQMnKLrAGos2Yl92wqvYK0AoAl88FFw=", "address"=>"sydeny opera house", "latitude"=>"", "longitude"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (35.3ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`) VALUES ('sydeny opera house', '2014-02-12 23:14:59', -33.8568704, 151.2152787, '2014-02-12 23:14:59')[0m
+  [1m[35m (141.0ms)[0m  COMMIT
+Redirected to http://192.168.0.109:3000/location/index
+Completed 302 Found in 451ms (ActiveRecord: 176.5ms)
+
+
+Started GET "/location/index" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations`
+  Rendered location/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+
+
+Started GET "/assets/article.css?body=1" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+
+
+Started GET "/assets/location.css?body=1" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+
+
+Started GET "/assets/article.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+
+
+Started GET "/assets/location.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+
+
+Started GET "/assets/authentications.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.109 at 2014-02-13 04:44:59 +0530
