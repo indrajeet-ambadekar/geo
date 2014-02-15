@@ -15,7 +15,7 @@
 				  <div class="col-lg-2 col-xs-1"></div>
 				  <div class="col-lg-8 col-xs-10 reg-input">
 				 	  <span class="glyphicon glyphicon-envelope ricon"></span>
-				  	<span><%= f.email_field :email, :autofocus => true %></span>
+				  	<span><%= f.email_field :email, :autofocus => true,:placeholder=>"Enter Email id" %></span>
 				  </div>
 				  <div class="col-lg-2 rtab"></div>
 				 </div>
@@ -23,7 +23,7 @@
 				  <div class="col-lg-2 col-xs-1"></div>	
 				  <div class="col-lg-8 col-xs-10 reg-input">
 					  <span class="glyphicon glyphicon-qrcode ricon"></span>
-					  <%= f.password_field :password %>
+					  <%= f.password_field :password,:placeholder=>"Enter Password" %>
 					</div>
 				  <div class="col-lg-2 rtab"></div>
 			  </div>
