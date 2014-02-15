@@ -1,17 +1,46 @@
-<h2>Sign in</h2>
-
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
-
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
-
-  <div><%= f.submit "Sign in" %></div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+<div class="container">
+	<div class="row">
+	<div class="col-lg-3 ltab"></div>
+		<div class="col-lg-6 signin">
+			<div class="row">
+				<div class="col-lg-3 ltab"></div>
+				<div class="col-lg-6 col-xs-12 reg-head">
+					<span class="glyphicon glyphicon-globe globe"></span> Sign in
+				</div>
+				<div class="col-lg-3 rtab"></div>
+			</div>
+			<div class="row">
+			<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+			  <div class="row reg-box reg-mob">
+				  <div class="col-lg-2 col-xs-1"></div>
+				  <div class="col-lg-8 col-xs-10 reg-input">
+				 	  <span class="glyphicon glyphicon-envelope ricon"></span>
+				  	<span><%= f.email_field :email, :autofocus => true %></span>
+				  </div>
+				  <div class="col-lg-2 rtab"></div>
+				 </div>
+			  <div class="row reg-box">
+				  <div class="col-lg-2 col-xs-1"></div>	
+				  <div class="col-lg-8 col-xs-10 reg-input">
+					  <span class="glyphicon glyphicon-qrcode ricon"></span>
+					  <%= f.password_field :password %>
+					</div>
+				  <div class="col-lg-2 rtab"></div>
+			  </div>
+			  <div class="row reg-foot">
+			  <div class="col-lg-6 col-xs-5"></div>
+			  <div class="col-lg-4 col-xs-6">
+				  <% if devise_mapping.rememberable? -%>
+				    <div><%= f.check_box :remember_me%> <%= f.label :remember_me %></div>
+				  <% end -%>
+				  <div><%= f.submit "Sign in", :class=>"btn btn-default sign-button" %></div>
+				  <div class="shared-links"><%= render "devise/shared/links" %></div>
+				</div>
+				<div class="col-lg-2 rtab"></div>
+			<% end %>
+			</div>
+			
+		</div>
+		<div class="col-lg-3 rtab"></div>
+	</div>
+</div>

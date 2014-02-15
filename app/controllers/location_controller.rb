@@ -4,15 +4,9 @@ class LocationController < ApplicationController
 
   def create
   	@post=Location.new
-    @post_user_id=current_user.id
+    @post.user_id=current_user.id
   	@post.address=params[:address]
-  	@post.longitude=params[:longitude]
-  	@post.latitude=params[:latitude]
-  	if @post.save
-  		@status="true"
-  	else
-  		@status="false"
-  	end
+    @post.save
     redirect_to :action=>:index
   end
 end

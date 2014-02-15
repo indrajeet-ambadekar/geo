@@ -13,14 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140212223340) do
 
-  create_table "articles", force: true do |t|
-    t.string   "title"
-    t.string   "desc"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "user_id"
-  end
-
   create_table "locations", force: true do |t|
     t.string   "address"
     t.float    "longitude"
