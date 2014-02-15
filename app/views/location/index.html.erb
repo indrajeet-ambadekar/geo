@@ -6,8 +6,8 @@
 	<div class="header">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-9"></div>
-			<div class="col-lg-2"><%=current_user.email%></div>
+			<div class="col-lg-8"><span class="glyphicon glyphicon-map-marker logo"></span></div>
+			<div class="col-lg-3 text-right">Welcome <i><%=current_user.email%></i></div>
 			<div class="col-lg-1"><a href="/users/sign_out" data-method="delete">Logout</a></div>	
 		</div>
 	</div>
@@ -23,7 +23,7 @@
 		<%= location.address %><br/>
 		<input type="text" hidden="true" value="<%= location.latitude %>" id="lat">
 		<input type="text" hidden="true" value="<%= location.longitude %>" id="lon">
-		<div id="googleMap" style="width:600px;height:480px;"></div>
+		<div id="googleMap" class='img-responsive' style="width:600px;height:480px;"></div>
 		<script>
 
 			function initialize()

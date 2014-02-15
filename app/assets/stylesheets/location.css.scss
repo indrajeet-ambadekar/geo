@@ -6,4 +6,18 @@ body{
 }
 .header .container{
 	width: 100%;
+	background-color: #121212;
+	height:50px;
+}
+.header .container, .container a, .container a:hover{
+	color: white;
+	font-size: 18px;
+	padding-top: 10px;
+}
+.header .container a:hover{
+	text-decoration: underline;
+}
+.logo{
+	font-size: 26px !important;
+	padding-left: 10px;
 }
