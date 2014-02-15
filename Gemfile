@@ -31,10 +31,9 @@ gem 'omniauth-facebook'
 gem "nifty-generators"
 gem 'geocoder'
 gem "therubyracer"
-
 gem "less-rails"
-
 gem "twitter-bootstrap-rails"
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 # gem 'gmaps4rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'

@@ -9,4 +9,5 @@ class LocationController < ApplicationController
     @post.save
     redirect_to :action=>:index
   end
+
 end
