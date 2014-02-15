@@ -3,7 +3,16 @@
 	</script>
 </head>
 <%if current_user%>
-	<%=current_user.email%>||<a href="/users/sign_out" data-method="delete">Logout</a>
+	<div class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9"></div>
+			<div class="col-lg-2"><%=current_user.email%></div>
+			<div class="col-lg-1"><a href="/users/sign_out" data-method="delete">Logout</a></div>	
+		</div>
+	</div>
+	
+	</div>
 	<form action='/create' method="POST">
 		<%= hidden_field_tag :authenticity_token, form_authenticity_token %> 
 		address:<input type="text" id="address" name="address" class="form-control"><br/>
@@ -16,15 +25,19 @@
 		<input type="text" hidden="true" value="<%= location.longitude %>" id="lon">
 		<div id="googleMap" style="width:600px;height:480px;"></div>
 		<script>
+
 			function initialize()
 			{
 				var myPos= new google.maps.LatLng($('#lat').val(),$('#lon').val());
 				var mapProp = {
 				  center:myPos,
 				  zoom:16,
-				  mapTypeId:google.maps.MapTypeId.ROADMAP
+				  mapTypeControl:true,
+			    mapTypeControlOptions: {
+			      style:google.maps.MapTypeControlStyle.DROPDOWN_MENU
+			    },
+				  mapTypeId:google.maps.MapTypeId.HYBRID
 			  };
-
 				var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 				var input = (document.getElementById('address'));
 
@@ -35,7 +48,6 @@
 			      map: map,
 			      title: '<%= location.address %>'
 			  });
-
 			}
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
