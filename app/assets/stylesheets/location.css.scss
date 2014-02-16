@@ -4,8 +4,10 @@
 body{
 	background-color: #66C2FF;
 }
-.header .container{
+.container{
 	width: 100%;
+}
+.header .container{
 	background-color: #121212;
 	height:50px;
 }
@@ -21,3 +23,25 @@ body{
 	font-size: 26px !important;
 	padding-left: 10px;
 }
+.content{
+	padding-top: 20px;
+}
+.searchbox{
+	padding: 8px 6px 8px 6px;
+	border: none;
+	font-size: 17px;
+	width: 80%;
+	border-radius: 5px 0px 0px 5px;
+}
+.search{
+	border: none;
+	font-size: 17px;
+	padding: 7px 6px 7px 6px;
+	margin-left: -4px;
+	border-radius: 0px 5px 5px 0px;
+}
+/*.searchicon{
+	background-color: white;
+	font-size: 17px;
+	padding: 8px 6px 8px 6px;
+}*/
