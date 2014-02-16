@@ -15,11 +15,13 @@
 	<div class="content">
 	<div class='container'>
 		<div class="row">
-			<div class="col-lg-6"></div>
+			<div class="col-lg-6 location">
+				<%= Location.where(:user_id=>current_user.id).last.address %>
+			</div>
 			<div class="col-lg-4">
 				<form action='/create' method="POST">
 					<%= hidden_field_tag :authenticity_token, form_authenticity_token %> 
-					<span class="glyphicon glyphicon-map-marker searchicon"></span>
+					<div class="searchicon"><span  class="glyphicon glyphicon-map-marker"></span></div>
 					<input type="text" id="address" name="address" class="searchbox">
 					<button class="search" onclick="submit();">
 						<span class="glyphicon glyphicon-search"></span>
@@ -33,12 +35,10 @@
 	
 	<% @loc=Location.where(:user_id=>current_user.id).last(1) %>
 	<% @loc.each do |location| %>
-		<%= location.address %><br/>
 		<input type="text" hidden="true" value="<%= location.latitude %>" id="lat">
 		<input type="text" hidden="true" value="<%= location.longitude %>" id="lon">
 		<div id="googleMap" class='img-responsive' style="width:600px;height:480px;"></div>
 		<script>
-
 			function initialize()
 			{
 				var myPos= new google.maps.LatLng($('#lat').val(),$('#lon').val());

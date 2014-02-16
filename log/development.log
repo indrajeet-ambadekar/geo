@@ -36279,3 +36279,1891 @@ Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:30:36 +
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:30:36 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:43:27 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:27 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:27 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:27 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:27 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:27 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:27 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:27 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:27 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:43:39 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:39 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:39 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:39 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:39 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:40 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:40 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:43:59 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 72ms (Views: 68.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:59 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:59 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:59 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:59 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:43:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:59 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:59 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:59 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:43:59 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:44:25 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:25 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:26 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:26 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:26 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:26 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:26 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:26 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:26 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:26 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:26 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:44:39 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:39 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:39 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:39 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:39 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:39 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:39 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:44:48 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:49 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:49 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:49 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:49 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:49 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:44:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:49 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:44:49 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:45:00 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:00 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:00 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:00 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:00 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:00 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:00 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:00 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:45:25 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 66.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:25 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:25 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:25 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:25 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:25 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:25 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:25 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:25 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:25 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:25 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:45:35 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:35 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:35 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:35 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:35 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:35 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:35 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:35 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:45:50 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 74ms (Views: 70.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:50 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:50 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:50 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:50 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:45:50 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:50 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:50 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:50 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:50 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:45:50 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:46:05 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 44ms (Views: 40.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:05 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:05 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:05 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:05 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:05 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:05 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:05 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:05 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:05 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:05 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:46:15 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 72ms (Views: 69.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:15 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:16 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:16 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:16 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:16 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:16 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:16 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:16 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:16 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:16 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:46:27 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:27 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:27 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:27 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:27 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:27 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:27 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:27 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:27 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:46:40 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:40 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:40 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:40 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:40 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:40 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:40 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:46:54 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:54 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:54 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:54 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:54 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:46:54 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:54 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:54 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:54 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:54 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:46:54 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:47:08 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:47:08 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:47:08 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:47:08 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:47:08 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:47:08 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:47:08 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:47:08 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:47:08 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:47:08 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:47:08 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:47:19 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 74ms (Views: 70.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:47:19 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:47:19 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:47:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:47:19 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:47:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:47:19 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:47:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:47:19 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:47:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:47:19 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:48:24 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:48:24 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:48:24 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:48:24 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:48:24 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:48:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:48:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:48:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:48:24 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:48:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:48:24 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:48:50 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 19ms (Views: 15.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:48:50 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:48:51 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:48:51 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:48:51 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:48:51 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:48:51 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:48:51 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:48:51 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:48:51 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:48:51 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:49:23 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:49:23 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:49:23 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:49:23 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:49:23 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:49:23 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:49:23 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:49:23 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:49:23 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:49:23 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:49:23 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:49:48 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 33.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:49:48 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:49:48 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:49:48 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:49:48 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:49:48 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:49:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:49:48 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:49:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:49:48 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:49:48 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:50:28 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:50:28 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:50:28 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:50:28 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:50:28 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:50:28 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:50:28 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:50:28 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:50:28 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:50:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:50:28 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:50:38 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:50:38 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:50:39 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:50:39 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:50:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:50:39 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:50:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:50:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:50:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:50:39 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:50:39 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:51:07 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 36ms (Views: 31.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:07 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:08 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:08 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:08 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:08 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:08 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:08 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:08 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:08 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:08 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:51:21 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 74ms (Views: 70.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:21 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:21 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:21 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:21 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:21 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:21 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:21 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:21 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:21 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:21 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:51:41 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 40ms (Views: 35.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:41 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:41 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:41 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:41 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:51:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:41 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:51:41 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:52:05 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:05 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:05 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:05 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:05 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:05 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:05 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:05 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:05 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:05 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:05 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:52:30 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:30 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:31 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:31 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:31 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:31 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:31 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:52:39 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:39 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:39 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:39 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:39 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:39 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:39 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:52:47 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 74ms (Views: 71.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:47 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:47 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:47 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:47 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:47 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:47 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:47 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:47 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:47 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:52:56 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:57 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:57 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:57 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:57 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:52:57 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:57 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:57 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:57 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:52:57 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:53:22 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 75ms (Views: 71.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:53:22 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:53:22 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:53:23 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:53:23 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:53:23 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:53:23 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:53:23 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:53:23 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:53:23 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:53:23 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:53:45 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:53:45 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:53:45 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:53:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:53:45 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:53:45 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:53:45 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:53:45 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:53:45 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:53:45 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:53:45 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:54:00 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 71ms (Views: 67.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:54:00 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:54:00 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:54:00 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:54:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:54:00 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:54:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:54:00 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:54:00 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:54:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:54:00 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:54:32 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:54:32 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:54:33 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:54:33 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:54:33 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:54:33 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:54:33 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:54:33 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:54:33 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:54:33 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:54:33 +0530
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:55:33 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (Invalid CSS after ".header": expected "{", was "<i{"
+  (in /home/samrat/Documents/git/geo/app/assets/stylesheets/location.css.scss:22)):
+    2: <html>
+    3: <head>
+    4:   <title>Loctest</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/location.css.scss:22
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1702103727702562857_47666780'
+
+
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/samrat/.rvm/gems/ruby-1.9.3-p484/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 05:55:41 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:55:41 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:55:41 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:55:41 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:55:41 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:55:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:55:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:55:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:55:41 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:55:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:55:41 +0530
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-02-16 05:56:57 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ULpHeTBCOVlSE0VTPzD5iqJb6Pt8e3Tt71htARa8njY="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-16 05:56:57 +0530
+Processing by LocationController#index as HTML
+  Rendered location/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:56:57 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:56:57 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:56:57 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:56:58 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:56:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:56:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:56:58 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:56:58 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:56:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:56:58 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-02-16 05:57:01 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-16 05:57:59 +0530
+Processing by LocationController#index as HTML
+  Rendered location/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 74ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:57:59 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:57:59 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:57:59 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:57:59 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:57:59 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:57:59 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:57:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:57:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:57:59 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:57:59 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-16 05:58:48 +0530
+Processing by LocationController#index as HTML
+  Rendered location/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:58:48 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:58:49 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:58:49 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:58:49 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:58:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:58:49 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:58:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:58:49 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:58:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:58:49 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-02-16 05:58:50 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 49ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-02-16 05:58:57 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/mNgUS5UFZ+5Jdq03bwk/KJwitG9qoBUNno0ckMY1lM=", "user"=>{"email"=>"test1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test1@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2014-02-15 23:25:46', `current_sign_in_at` = '2014-02-16 00:28:57', `sign_in_count` = 11, `updated_at` = '2014-02-16 00:28:57' WHERE `users`.`id` = 1[0m
+  [1m[35m (161.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 256ms (ActiveRecord: 162.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-16 05:58:58 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC
+  Rendered location/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 05:58:58 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 05:58:58 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 05:58:58 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 05:58:58 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 05:58:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 05:58:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 05:58:58 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 05:58:58 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 05:58:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 05:58:58 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-16 06:03:07 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 06:03:07 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 06:03:07 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 06:03:07 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 06:03:07 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 06:03:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 06:03:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 06:03:07 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 06:03:07 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 06:03:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 06:03:07 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-16 06:03:39 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.2ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -72.5459), RADIANS(locations.latitude - -13.1636))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN -13.308331783110848 AND -13.018868216889153 AND locations.longitude BETWEEN -72.69453741281728 AND -72.39726258718272 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((-13.1636 - locations.latitude) * PI() / 180 / 2), 2) + COS(-13.1636 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-72.5459 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 37) ORDER BY distance ASC
+  Rendered location/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 47ms (Views: 41.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 06:03:39 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 06:03:39 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 06:03:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 06:03:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 06:03:39 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 06:03:39 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 06:03:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 06:03:39 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 06:03:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 06:03:39 +0530
+
+
+Started POST "/create" for 127.0.0.1 at 2014-02-16 06:05:00 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"U6pxKpX7jaQBKccRj/ve1T1C0HWF2gDhPsi257FfWF8=", "address"=>"Buckingham Palace, London, United Kingdom"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`, `user_id`) VALUES ('Buckingham Palace, London, United Kingdom', '2014-02-16 00:35:01', 51.501364, -0.14189, '2014-02-16 00:35:01', 1)[0m
+  [1m[35m (138.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/location/index
+Completed 302 Found in 507ms (ActiveRecord: 139.7ms)
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 06:05:01 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1
+  [1m[36mLocation Load (0.6ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((51.5014 - locations.latitude) * PI() / 180 / 2), 2) + COS(51.5014 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-0.14189 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -0.14189), RADIANS(locations.latitude - 51.5014))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN 51.35666821688915 AND 51.646131783110846 AND locations.longitude BETWEEN -0.3743925320171341 AND 0.09061253201713415 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((51.5014 - locations.latitude) * PI() / 180 / 2), 2) + COS(51.5014 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-0.14189 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 38) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 21ms (Views: 15.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 06:05:01 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 06:05:01 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 06:05:01 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 06:05:01 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 06:05:01 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 06:05:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 06:05:01 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 06:05:01 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 06:05:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 06:05:01 +0530
+
+
+Started POST "/create" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"U6pxKpX7jaQBKccRj/ve1T1C0HWF2gDhPsi257FfWF8=", "address"=>"21 Baker Street, London, United Kingdom"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`, `user_id`) VALUES ('21 Baker Street, London, United Kingdom', '2014-02-16 00:35:46', 51.5223562, -0.1576225, '2014-02-16 00:35:46', 1)
+  [1m[36m (243.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/location/index
+Completed 302 Found in 509ms (ActiveRecord: 244.5ms)
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+Processing by LocationController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1[0m
+  [1m[35mLocation Load (0.4ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1[0m
+  [1m[35mLocation Load (0.7ms)[0m  SELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((51.5224 - locations.latitude) * PI() / 180 / 2), 2) + COS(51.5224 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-0.157623 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -0.157623), RADIANS(locations.latitude - 51.5224))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN 51.37766821688915 AND 51.66713178311085 AND locations.longitude BETWEEN -0.39023273439606376 AND 0.07498673439606376 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((51.5224 - locations.latitude) * PI() / 180 / 2), 2) + COS(51.5224 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-0.157623 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 39) ORDER BY distance ASC
+  Rendered location/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 06:05:46 +0530
+
+
+Started POST "/create" for 127.0.0.1 at 2014-02-16 06:10:06 +0530
+Processing by LocationController#create as HTML
+  Parameters: {"authenticity_token"=>"U6pxKpX7jaQBKccRj/ve1T1C0HWF2gDhPsi257FfWF8=", "address"=>"Sherlock Holmes Museum, Baker Street, London, United Kingdom"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `locations` (`address`, `created_at`, `latitude`, `longitude`, `updated_at`, `user_id`) VALUES ('Sherlock Holmes Museum, Baker Street, London, United Kingdom', '2014-02-16 00:40:06', 51.5237587, -0.1583642, '2014-02-16 00:40:06', 1)[0m
+  [1m[35m (252.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/location/index
+Completed 302 Found in 514ms (ActiveRecord: 253.7ms)
+
+
+Started GET "/location/index" for 127.0.0.1 at 2014-02-16 06:10:06 +0530
+Processing by LocationController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `locations` WHERE `locations`.`user_id` = 1
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `locations`.* FROM `locations` WHERE `locations`.`user_id` = 1 ORDER BY `locations`.`id` DESC LIMIT 1
+  [1m[36mLocation Load (0.8ms)[0m  [1mSELECT locations.*, 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((51.5238 - locations.latitude) * PI() / 180 / 2), 2) + COS(51.5238 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-0.158364 - locations.longitude) * PI() / 180 / 2), 2))) AS distance, CAST(DEGREES(ATAN2( RADIANS(locations.longitude - -0.158364), RADIANS(locations.latitude - 51.5238))) + 360 AS decimal) % 360 AS bearing FROM `locations` WHERE (locations.latitude BETWEEN 51.37906821688915 AND 51.66853178311085 AND locations.longitude BETWEEN -0.3909808858476446 AND 0.07425288584764461 AND 3958.755864232 * 2 * ASIN(SQRT(POWER(SIN((51.5238 - locations.latitude) * PI() / 180 / 2), 2) + COS(51.5238 * PI() / 180) * COS(locations.latitude * PI() / 180) * POWER(SIN((-0.158364 - locations.longitude) * PI() / 180 / 2), 2))) <= 10 AND locations.id != 40) ORDER BY distance ASC[0m
+  Rendered location/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 22ms (Views: 17.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 06:10:06 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-16 06:10:06 +0530
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2014-02-16 06:10:06 +0530
+
+
+Started GET "/assets/devise.css?body=1" for 127.0.0.1 at 2014-02-16 06:10:06 +0530
+
+
+Started GET "/assets/location.css?body=1" for 127.0.0.1 at 2014-02-16 06:10:06 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 06:10:06 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 06:10:06 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 06:10:06 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-16 06:10:06 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 06:10:06 +0530

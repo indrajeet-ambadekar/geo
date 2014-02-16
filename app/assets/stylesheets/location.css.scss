@@ -11,13 +11,16 @@ body{
 	background-color: #121212;
 	height:50px;
 }
-.header .container, .container a, .container a:hover{
+.header .container,.header .container a,.header .container a:hover{
 	color: white;
 	font-size: 18px;
 	padding-top: 10px;
 }
 .header .container a:hover{
 	text-decoration: underline;
+}
+.header i{
+	font-size: 15px;
 }
 .logo{
 	font-size: 26px !important;
@@ -31,7 +34,6 @@ body{
 	border: none;
 	font-size: 17px;
 	width: 80%;
-	border-radius: 5px 0px 0px 5px;
 }
 .search{
 	border: none;
@@ -40,8 +42,17 @@ body{
 	margin-left: -4px;
 	border-radius: 0px 5px 5px 0px;
 }
-/*.searchicon{
+.searchicon{
 	background-color: white;
-	font-size: 17px;
-	padding: 8px 6px 8px 6px;
-}*/
+	font-size: 18px;
+	padding-top: 6px;
+	padding-left: 5px;
+	padding-bottom: 6px;
+	margin-right: -2px;
+	width: 25px;
+	float:left;
+	border-radius: 5px 0px 0px 5px;
+}
+.location{
+	font-size: 20px;
+}
